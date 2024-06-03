@@ -24,9 +24,9 @@ public class sentenciasBucle {
             // Bloque de código a ejecutar
         }
         /*
-         * La condición del bucle se evalúa antes 
-         * de cada iteración. Si la condición es true, 
-         * se ejecuta el bloque de código. 
+         * La condición del bucle se evalúa antes
+         * de cada iteración. Si la condición es true,
+         * se ejecuta el bloque de código.
          * Si la condición es false, el bucle termina.
          */
 
@@ -77,4 +77,13 @@ public class sentenciasBucle {
         }
     }
 
+    public static void ejemploBucle() {
+        System.out.println("Números del 1 al 10");
+        int contador = 1;
+        while (contador <= 10) {
+            //mostramos por consola
+            System.out.println(contador);
+            contador++;//incrementamos
+        }
+    }
 }
