@@ -36,15 +36,15 @@ public class sentenciasBucle {
          * se ejecuta al menos una vez
          */
 
-         System.out.println("Bucle do-while (hacer mientras)");
+        System.out.println("Bucle do-while (hacer mientras)");
         do {
             // Bloque de código a ejecutar
         } while (condicion);
 
         /*
-         * La condición del bucle se evalúa después 
+         * La condición del bucle se evalúa después
          * de cada iteración. Si la condición
-         * es true, el bucle continúa. 
+         * es true, el bucle continúa.
          * Si la condición es false, el bucle termina.
          */
 
@@ -93,5 +93,14 @@ public class sentenciasBucle {
             System.out.println(contador);
             contador++;// incrementamos
         }
+
+        System.out.println("Números del 1 al 10");
+        int contador = 1;
+        do {
+            //mostramos por consola
+            System.out.println(contador);
+            contador++;//incrementamos
+        } while (contador <= 10);
+
     }
 }
