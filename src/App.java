@@ -1,7 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hola Mundo");
-        ejemplos();
+        System.out.println("Condicionales en java");
+        //ejemplos();
+        ejemplosCondicionalesCombinadas();
     }
 
     public static void sentenciaCondicionales() {
@@ -41,5 +42,24 @@ public class App {
         } else {
             System.out.println("Necesitas esforzarte un poco mas");
         }
+    }
+
+    public static void ejemplosCondicionalesCombinadas() {
+        float promedio = 4.5f;
+        if (promedio >= 6.5) {
+            System.out.println("Felicitaciones, excelente promedio");
+        } else if (promedio >= 6.0) {
+            System.out.println("Muy buen promedio");
+        } else if (promedio >= 5.5) {
+            System.out.println("Buen promedio");
+        } else if (promedio >= 5.0) {
+            System.out.println("Regular, necesitas esforzaste mas!");
+        } else if (promedio >= 4.0) {
+            System.out.println("Insufiente, necesitas esforzaste mas!");
+        } else {
+            System.out.println("Reprovado");
+        }
+
+        System.out.println("Tu promedio es:  " + promedio);
     }
 }
