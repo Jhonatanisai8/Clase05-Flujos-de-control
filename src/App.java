@@ -7,7 +7,8 @@ public class App {
         System.out.println("Condicionales en java");
         // ejemplos();
         // ejemplosCondicionalesCombinadas();
-        ejemploAñoBisiesto();
+        // ejemploAñoBisiesto();
+        sentenciaSwichtCaseEjemploMes();
     }
 
     public static void sentenciaCondicionales() {
@@ -96,6 +97,53 @@ public class App {
             System.out.println("Dias: " + numeroDias);
             System.out.println("Año: " + anio);
             System.out.print("¿Desea Continuar y/n?");
+            opcion = leer.next();
+        } while (opcion.equalsIgnoreCase("y"));
+    }
+
+    public static void sentenciaSwichtCaseEjemploMes() {
+        String opcion;
+        do {
+            int mes;
+            int numeroDias = 0;
+            int anio;
+            System.out.print("Ingrese el numero de mes (1 al 12):");
+            mes = leer.nextInt();
+            System.out.print("Ingres un año: ");
+            anio = leer.nextInt();
+            switch (mes) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    numeroDias = 31;
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    numeroDias = 30;
+                    break;
+                case 2:
+                    if ((anio % 400 == 0) || ((anio % 4 == 0) && !(anio % 100 == 0))) {
+                        numeroDias = 29;
+                        System.out.println("Año Bisiesto");
+                    } else {
+                        numeroDias = 28;
+                        System.out.println("Año no bisiesto");
+                    }
+                    break;
+                default:
+                    numeroDias = 0;
+                    break;
+            }
+            System.out.println("Mes: " + mes);
+            System.out.println("Numero de Dias: " + numeroDias);
+            System.out.println("Año: " + anio);
+            System.out.print("¿Desea continuar y/n?");
             opcion = leer.next();
         } while (opcion.equalsIgnoreCase("y"));
     }
