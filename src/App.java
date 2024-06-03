@@ -1,8 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Condicionales en java");
-        //ejemplos();
-        ejemplosCondicionalesCombinadas();
+        // ejemplos();
+       // ejemplosCondicionalesCombinadas();
+       ejemploAñoBisiesto();
     }
 
     public static void sentenciaCondicionales() {
@@ -61,5 +62,27 @@ public class App {
         }
 
         System.out.println("Tu promedio es:  " + promedio);
+    }
+
+    public static void ejemploAñoBisiesto() {
+        int mes = 2;
+        int numeroDias = 0;
+        int anio = 2016;
+        if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
+            numeroDias = 31;
+        } else if (mes == 4 || mes == 6 || mes == 9 || mes == 9 || mes == 11) {
+            numeroDias = 30;
+        } else if (mes == 2) {
+            if ((anio % 400 == 0) || ((anio % 4 == 0) && !(anio % 100 == 0))) {
+                numeroDias = 29;
+                System.out.println("Año Bisiesto");
+            } else {
+                numeroDias = 28;
+                System.out.println("Año no bisiesto");
+            }
+        }
+
+        System.out.println("Dias: "+numeroDias);
+        System.out.println("Año: "+anio);
     }
 }
