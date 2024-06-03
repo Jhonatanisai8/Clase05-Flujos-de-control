@@ -1,6 +1,14 @@
 public class sentenciasBucle {
     public static void main(String[] args) {
 
+        System.out.println("Imprimir los elementos de un arreglo");
+        String arregloNombres[] = {
+                "Ana",
+                "Luis",
+                "Marcos" };
+        for (int k = 0; k < arregloNombres.length; k++) {
+            System.out.println(arregloNombres[k]);
+        }
     }
 
     public static void sentenciasBucles() {
@@ -11,9 +19,16 @@ public class sentenciasBucle {
          */
         boolean condicion = true;
         System.out.println("Sentencias de bucle en Java");
+        System.out.println("Bucle while (mientras)");
         while (condicion) {
-            // mientras se cumpla la condicion se ejecuta el codigo en esta parte
+            // Bloque de código a ejecutar
         }
+        /*
+         * La condición del bucle se evalúa antes 
+         * de cada iteración. Si la condición es true, 
+         * se ejecuta el bloque de código. 
+         * Si la condición es false, el bucle termina.
+         */
 
         // do while
         /*
@@ -35,19 +50,31 @@ public class sentenciasBucle {
         for (int i = 0; i < 10; i++) {
             // expresiones
         }
-        System.out.println("Bucle for en Java");
-        for (inicializacion; condicion; actualizacion) {
-            // Bloque de código a ejecutar
-        }
         /*
+         * System.out.println("Bucle for en Java");
+         * for (inicializacion; condicion; actualizacion) {
+         * // Bloque de código a ejecutar
+         * }
+         * 
          * La variable de control del bucle se inicializa
-         *  con el valor de inicializacion.
-         * La condición del bucle se evalúa antes de cada iteración. 
+         * con el valor de inicializacion.
+         * La condición del bucle se evalúa antes de cada iteración.
          * Si la condición es true, se ejecuta el bloque de código.
-         *  Si la condición es false, el bucle termina.
+         * Si la condición es false, el bucle termina.
          * La variable de control se actualiza con el valor
          * de actualizacion después de cada iteración.
          */
 
+        System.out.println("Imprimir los números del 1 al 10");
+        for (int j = 1; j <= 10; j++) {
+            // imprimos por consola
+            System.out.println(j);
+        }
+
+        String arregloNombres[] = { "Ana", "Luis", "Marcos" };
+        for (int k = 0; k < arregloNombres.length; k++) {
+            System.out.println(k);
+        }
     }
+
 }
