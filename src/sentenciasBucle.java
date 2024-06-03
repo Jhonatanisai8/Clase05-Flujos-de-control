@@ -73,16 +73,6 @@ public class sentenciasBucle {
          * de actualizacion después de cada iteración.
          */
 
-        System.out.println("Imprimir los números del 1 al 10");
-        for (int j = 1; j <= 10; j++) {
-            // imprimos por consola
-            System.out.println(j);
-        }
-
-        String arregloNombres[] = { "Ana", "Luis", "Marcos" };
-        for (int k = 0; k < arregloNombres.length; k++) {
-            System.out.println(k);
-        }
     }
 
     public static void ejemploBucle() {
@@ -97,10 +87,20 @@ public class sentenciasBucle {
         System.out.println("Números del 1 al 10");
         int contador = 1;
         do {
-            //mostramos por consola
+            // mostramos por consola
             System.out.println(contador);
-            contador++;//incrementamos
+            contador++;// incrementamos
         } while (contador <= 10);
+        
+        System.out.println("Imprimir los números del 1 al 10");
+        for (int j = 1; j <= 10; j++) {
+            // imprimos por consola
+            System.out.println(j);
+        }
 
+        String arregloNombres[] = { "Ana", "Luis", "Marcos" };
+        for (int k = 0; k < arregloNombres.length; k++) {
+            System.out.println(k);
+        }
     }
 }
