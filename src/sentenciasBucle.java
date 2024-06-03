@@ -35,5 +35,19 @@ public class sentenciasBucle {
         for (int i = 0; i < 10; i++) {
             // expresiones
         }
+        System.out.println("Bucle for en Java");
+        for (inicializacion; condicion; actualizacion) {
+            // Bloque de código a ejecutar
+        }
+        /*
+         * La variable de control del bucle se inicializa
+         *  con el valor de inicializacion.
+         * La condición del bucle se evalúa antes de cada iteración. 
+         * Si la condición es true, se ejecuta el bloque de código.
+         *  Si la condición es false, el bucle termina.
+         * La variable de control se actualiza con el valor
+         * de actualizacion después de cada iteración.
+         */
+
     }
 }
