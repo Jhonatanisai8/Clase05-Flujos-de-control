@@ -1,11 +1,13 @@
 import java.util.Scanner;
+
 public class Ejercicio03SumaHastaelNumero {
     static Scanner leer = new Scanner(System.in);
+
     public static void main(String[] args) {
         // variables
         int numero, suma;
         /*
-         * con un ciclo do-while pedimos
+         * con un ciclo do-while pedimos el número
          * este se detendra cuando se ingrese un 0
          */
         do {
