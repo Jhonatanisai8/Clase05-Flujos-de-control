@@ -1,6 +1,6 @@
 public class SentenciaFor {
     public static void main(String[] args) {
-        otroFormaDiferenteFor();
+        forDecremento();        
     }
 
     public static void otroFormaDiferenteFor() {
@@ -11,6 +11,13 @@ public class SentenciaFor {
                 break;
             }
             i++;
+            System.out.println(i);
+        }
+    }
+
+    public static void forDecremento() {
+        System.out.println("=Bucle for en forma de decremento=");
+        for (int i = 10; i > 0; i--) {
             System.out.println(i);
         }
     }
