@@ -1,7 +1,7 @@
 
 public class SentenciaWhile {
     public static void main(String[] args) {
-        sentenciaDoWhile();
+        otroEjemploDoWhile();
     }
 
     public static void sentenciaWhile() {
@@ -34,5 +34,17 @@ public class SentenciaWhile {
             i++;
         } while (i <= 10);
     }
-    
+
+    public static void otroEjemploDoWhile(){
+        boolean prueba = true;
+        int i = 0;
+        do {
+            if (i == 10) {
+                prueba = false;
+            }
+            System.out.println("i: "+i);
+            i++;
+        } while (prueba);
+    }
+
 }
