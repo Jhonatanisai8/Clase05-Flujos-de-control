@@ -21,8 +21,8 @@ public class SentenciaForArreglo {
         String nombres[] = { "Maria", "Pedro", "Juan", "Pedro", "Walter", "Juanito", "Carlos" };
         int longitud = nombres.length;
         for (int i = 0; i < longitud; i++) {
-            if (nombres[i].contains("Juan")
-                    || nombres[i].contains("Maria")) {
+            if (nombres[i].toLowerCase().contains("Juan".toLowerCase())
+                    || nombres[i].toLowerCase().contains("Maria".toLowerCase())) {
                 continue;// omite el valor de juan
             }
             System.out.println(i + " " + nombres[i]);
