@@ -1,6 +1,6 @@
 public class EjemploEtiquetasBuscar {
     public static void main(String[] args) {
-        encontrarPalabra();
+        encontrarPalabraOptimizado();
     }
 
     public static void encontrarCaracter() {
@@ -40,4 +40,26 @@ public class EjemploEtiquetasBuscar {
         System.out.println("Encontrado = " + contador + " veces la palabra " + palabra);
     }
 
+    public static void encontrarPalabraOptimizado() {
+        System.out.println("=Encontrado una palabra con etiquetas=\n");
+        String frase = "Pablito calva clavó un clavito en la calva de un calvito. En la calva de un calvito, un clavito clavó Pablito. Pablito clavó un clavito. ¿Qué clavito clavó Pablito?.";
+        System.out.println(frase);
+        String palabra = "calva";
+        int maxPalabra = palabra.length();
+        // recorremos la frase
+        int tamanio = frase.length() - maxPalabra;
+        int contador = 0;
+        bucle1: for (int i = 0; i <= tamanio;) {
+            int k = i;// variable auxiliar
+            for (int j = 0; j < maxPalabra; j++) {
+                if (frase.charAt(k++) != palabra.charAt(j)) {
+                    i++;
+                    continue bucle1;
+                }
+            }
+            contador++;
+            i = i + maxPalabra;
+        }
+        System.out.println("Encontrado = " + contador + " veces la palabra " + palabra);
+    }
 }
